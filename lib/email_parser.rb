@@ -9,7 +9,9 @@ class EmailAddressParser
     @email_addresses=emails
   end
   def parse
-    parser=EmailAddressParser.new(emails)
-    array=parser.split(","||" ")
+  emailstring=EmailAddressParser.new
+  string= emailstring.email_addresses
+    array=string.split(","||" ")
+    array
   end
 end
