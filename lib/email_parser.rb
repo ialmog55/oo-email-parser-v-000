@@ -11,10 +11,7 @@ class EmailAddressParser
   end
 
   def parse
-    emailstring = EmailAddressParser.new
-    string = emailstring.email_addresses
-    array = string.split(/","|\s/)
-    array
+    @email_addresses.split(/\s|"''"/)
   end
 
 end
